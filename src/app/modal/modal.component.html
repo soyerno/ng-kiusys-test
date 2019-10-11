@@ -1,0 +1,14 @@
+<div class="modal" [ngClass]="{'is-active': isModalOpen}" *ngIf="content">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <header class="modal-card-head">
+      <button (click)="close()" class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+      <img [src]="content.url" alt="">
+      <p class="modal-card-title">{{content.title}}</p>
+
+    </section>
+  </div>
+</div>
